@@ -18,7 +18,7 @@ export const IMG = {
   jewellery5: img('https://images.pexels.com/photos/34511063/pexels-photo-34511063.jpeg?auto=compress&cs=tinysrgb&w=1000'),
   jewellery6: img('photo-1611652022419-a9419f74343d'),
   jewellery7: img('photo-1603561591411-07134e71a2a9'),
-  jewellery8: img('photo-1615813967515-e1838c1c5116'),
+  jewellery8: img('https://images.pexels.com/photos/10474333/pexels-photo-10474333.jpeg?auto=compress&cs=tinysrgb&w=1000'),
   ring2: img('photo-1576566588028-4147f3842f27'),
   rings2: img('photo-1522312346375-d1a52e2b99b3'),
   jewellery9: img('photo-1603974372039-adc49044b6bd'),
