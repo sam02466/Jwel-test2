@@ -1,0 +1,224 @@
+// Sarika Beauty Hub — Prisma Schema
+//
+// Adapted from the "New Bardhaman Sweet Shop" backend (see README.md
+// "Where this came from" section for the full list of what changed).
+// Structural shape (Product/Order/OrderItem/Admin/DeliveryAgent/
+// PushSubscription, the QR-handover fields, the two-JWT-secret pattern)
+// is reused as-is. What's different for a jewellery storefront:
+//   - Category enum swapped to jewellery collections
+//   - OrderStatus swapped to the 5-step flow the frontend already
+//     expects (placed/confirmed/assigned/out_for_delivery/delivered)
+//   - OrderType (DELIVERY/PICKUP) removed — this shop is delivery-only
+//   - Product gained jewellery-specific fields (mrp, badge, rating,
+//     reviews, images[], details, featured, isNew)
+//   - NEW: Customer model + password auth — the sweet shop had no
+//     customer accounts at all (guest checkout by phone only); the
+//     jewellery frontend already had a full sign-up/sign-in UI wired to
+//     nothing real, so this is the missing piece that makes it real.
+//   - Money is stored in whole rupees, not paise — the jewellery
+//     frontend's fmtINR() and every price field it touches already
+//     assumes rupees; keeping that convention meant the display layer
+//     needed zero changes. Only lib/razorpay.ts converts to paise, at
+//     the one point that actually talks to Razorpay.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ── Enums ───────────────────────────────────────────────────────────────
+
+enum Category {
+  NECKLACES
+  EARRINGS
+  RINGS
+  BANGLES
+  MANGALSUTRA
+  BRACELETS
+  ANKLETS
+  KUNDAN_SETS
+}
+
+enum PaymentStatus {
+  PENDING
+  PAID
+  FAILED
+  REFUNDED
+}
+
+/// 5-step delivery flow the frontend (StatusBadge, order-tracking UI)
+/// already renders. No PICKUP/PREPARING/READY — this shop ships
+/// everything, nothing is made-to-order at a counter.
+enum OrderStatus {
+  PLACED
+  CONFIRMED
+  ASSIGNED
+  OUT_FOR_DELIVERY
+  DELIVERED
+  CANCELLED
+}
+
+enum SubscriberRole {
+  ADMIN
+  CUSTOMER
+}
+
+// ── Entities ────────────────────────────────────────────────────────────
+
+model Product {
+  id          String   @id @default(cuid())
+  name        String
+  category    Category
+  description String?
+  images      String[] // 1+ image URLs; first is the primary/cover image
+  price       Int // rupees. DB integrity: price cannot be negative.
+  mrp         Int? // rupees; strikethrough "was" price, optional
+  badge       String? // e.g. "Bestseller" / "Exclusive" / "New"
+  rating      Float    @default(4.7)
+  reviews     Int      @default(0)
+  details     Json? // free-form spec sheet: {Metal, Purity, Weight, Stones, Origin, ...}
+  featured    Boolean  @default(false)
+  isNew       Boolean  @default(false)
+  stock       Int      @default(0) // DB integrity: stock cannot be negative.
+  isAvailable Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  orderItems OrderItem[]
+
+  @@index([category])
+  @@index([isAvailable])
+  @@index([featured])
+}
+
+/// Real customer accounts — new relative to the sweet-shop source.
+/// Password is hashed with bcrypt (see lib/customer-auth.ts), same
+/// pattern as Admin/DeliveryAgent.
+model Customer {
+  id           String   @id @default(cuid())
+  name         String
+  email        String   @unique
+  phone        String
+  passwordHash String
+  addressLine1 String?
+  addressCity  String?
+  addressPincode String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  orders Order[]
+
+  @@index([email])
+}
+
+model Order {
+  id            String        @id @default(cuid())
+  customerId    String? // set when the buyer was signed in at checkout; null for guest checkout
+  customerName  String
+  phone         String
+  email         String?
+  addressLine1  String
+  addressCity   String
+  addressPincode String
+  paymentMethod String // "UPI" | "Card" | "COD" — free text, not an enum: new gateways/methods shouldn't need a migration
+  paymentStatus PaymentStatus @default(PENDING)
+  orderStatus   OrderStatus   @default(PLACED)
+  subtotal      Int // rupees
+  shipping      Int           @default(0) // rupees — always 0 today (free shipping storewide), kept as a real column so a future paid tier doesn't need a migration
+  totalAmount   Int // rupees. DB integrity: totalAmount = subtotal + shipping.
+  razorpayOrderId String?
+  paymentId     String?
+  // Delivery destination — geocoded from the address at checkout (see
+  // lib/geocode.ts). Null until geocoding succeeds; never a fake
+  // placeholder pin.
+  latitude      Float?
+  longitude     Float?
+  // The assigned agent's own live position, reported by their phone
+  // while the order is OUT_FOR_DELIVERY (see PATCH /api/agent/location
+  // and src/lib/geolocation.js on the frontend). Null whenever the
+  // agent hasn't shared a location yet, or has paused sharing.
+  agentLatitude  Float?
+  agentLongitude Float?
+  agentLocationUpdatedAt DateTime?
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  // Delivery-agent / QR-handover fields — reused as-is from the sweet
+  // shop's design, just with the sweets-specific OrderType/PICKUP branch
+  // removed from the API layer (this shop has no pickup option).
+  assignedAgentId String?
+  qrToken         String?   @unique
+  deliveredAt     DateTime?
+
+  customer      Customer?      @relation(fields: [customerId], references: [id], onDelete: SetNull)
+  items         OrderItem[]
+  pushSubscriptions PushSubscription[]
+  assignedAgent DeliveryAgent? @relation(fields: [assignedAgentId], references: [id], onDelete: SetNull)
+
+  @@index([createdAt])
+  @@index([paymentStatus])
+  @@index([orderStatus])
+  @@index([phone])
+  @@index([customerId])
+  @@index([assignedAgentId])
+}
+
+model OrderItem {
+  id        String @id @default(cuid())
+  orderId   String
+  productId String
+  quantity  Int // DB integrity: quantity must be greater than zero.
+  price     Int // rupees, unit price captured at order time (not a live read of Product.price)
+  subtotal  Int // rupees
+
+  order   Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  // Deleting a product with order history is blocked (RESTRICT), not
+  // cascaded — same reasoning as the sweet-shop source: historical
+  // orders must never be silently orphaned. The admin product-delete
+  // route catches this and tells the admin to mark it unavailable
+  // instead.
+  product Product @relation(fields: [productId], references: [id], onDelete: Restrict)
+
+  @@index([orderId])
+  @@index([productId])
+}
+
+model Admin {
+  id           String   @id @default(cuid())
+  username     String   @unique
+  passwordHash String
+  createdAt    DateTime @default(now())
+}
+
+model DeliveryAgent {
+  id           String   @id @default(cuid())
+  username     String   @unique
+  passwordHash String
+  name         String
+  phone        String?
+  area         String? // serving area shown in the admin agents list
+  vehicle      String?
+  rating       Float    @default(4.8)
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+
+  orders Order[]
+}
+
+model PushSubscription {
+  id        String         @id @default(cuid())
+  endpoint  String         @unique
+  p256dh    String
+  auth      String
+  role      SubscriberRole
+  orderId   String?
+  createdAt DateTime       @default(now())
+
+  order Order? @relation(fields: [orderId], references: [id], onDelete: SetNull)
+
+  @@index([role])
+}

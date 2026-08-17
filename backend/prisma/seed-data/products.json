@@ -1,0 +1,574 @@
+[
+  {
+    "name": "Aadhya Kundan Bridal Set",
+    "category": "KUNDAN_SETS",
+    "description": "A royal 7-piece bridal ensemble featuring uncut polki and hand-set kundan in 22K gold plating. Includes necklace, choker, matching jhumkas, maang tikka, nose ring and a pair of bangles — made to make every bride feel like a queen.",
+    "images": [
+      "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1603974372039-adc49044b6bd?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 48999,
+    "mrp": 65999,
+    "badge": "Bestseller",
+    "rating": 4.9,
+    "reviews": 214,
+    "details": {
+      "Metal": "22K Gold Plated (BIS 916 base)",
+      "Purity": "Polki & Kundan",
+      "Weight": "148 g approx.",
+      "Stones": "Uncut Polki, Pearl, Emerald",
+      "Closure": "Threaded & Hook",
+      "Origin": "Handcrafted in Jaipur"
+    },
+    "featured": true,
+    "isNew": false,
+    "stock": 6
+  },
+  {
+    "name": "Meera Pearl & Gold Choker",
+    "category": "NECKLACES",
+    "description": "Freshwater pearls strung on lustrous gold-layered chain with a delicate floral filigree centre. A timeless choker that transitions effortlessly from office wear to festive evenings.",
+    "images": [
+      "https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 21500,
+    "mrp": 27900,
+    "badge": "New",
+    "rating": 4.8,
+    "reviews": 96,
+    "details": {
+      "Metal": "18K Gold Plated",
+      "Purity": "Rhodium finished",
+      "Weight": "32 g approx.",
+      "Stones": "Freshwater Pearl (7–8 mm)",
+      "Length": "16\" + 2\" extender",
+      "Origin": "Handcrafted in Jaipur"
+    },
+    "featured": true,
+    "isNew": true,
+    "stock": 14
+  },
+  {
+    "name": "Roshni Diamond Pendant",
+    "category": "NECKLACES",
+    "description": "A single brilliant-cut diamond (0.42 carat, VS clarity) suspended from an airy diamond-set chain. Certified by IGI and accompanied by a lifetime buyback promise.",
+    "images": [
+      "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 84500,
+    "mrp": 98000,
+    "badge": "Exclusive",
+    "rating": 5,
+    "reviews": 41,
+    "details": {
+      "Metal": "18K Yellow Gold",
+      "Purity": "BIS Hallmarked",
+      "Weight": "6.8 g approx.",
+      "Stones": "Brilliant Round 0.42 ctw",
+      "Chain": "18\" Singapore chain",
+      "Certification": "IGI Certified"
+    },
+    "featured": false,
+    "isNew": false,
+    "stock": 3
+  },
+  {
+    "name": "Kavya Polki Chandeliers",
+    "category": "EARRINGS",
+    "description": "Uncut polki chandelier earrings with pearl drops and delicate gold wirework. Feather-light despite their opulent look — perfect for weddings and receptions.",
+    "images": [
+      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1615813967515-e1838c1c5116?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 18200,
+    "mrp": 23600,
+    "badge": "Bestseller",
+    "rating": 4.9,
+    "reviews": 178,
+    "details": {
+      "Metal": "22K Gold Plated",
+      "Purity": "Polki & Kundan",
+      "Weight": "24 g pair",
+      "Stones": "Polki, Pearl",
+      "Length": "3.2 inches",
+      "Closure": "Push-back posts"
+    },
+    "featured": true,
+    "isNew": false,
+    "stock": 9
+  },
+  {
+    "name": "Nandini Meenakari Jhumkas",
+    "category": "EARRINGS",
+    "description": "Classic dome jhumkas with hand-painted meenakari on the reverse and a cascade of tiny gold beads. Crafted to catch the light with every turn of the head.",
+    "images": [
+      "https://images.unsplash.com/photo-1615813967515-e1838c1c5116?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 9800,
+    "mrp": 13200,
+    "badge": "New",
+    "rating": 4.7,
+    "reviews": 63,
+    "details": {
+      "Metal": "22K Gold Plated",
+      "Purity": "Meenakari work",
+      "Weight": "18 g pair",
+      "Stones": "Zircon, Beads",
+      "Diameter": "1.8 inches"
+    },
+    "featured": false,
+    "isNew": true,
+    "stock": 20
+  },
+  {
+    "name": "Tanvi Gold Solitaire Studs",
+    "category": "EARRINGS",
+    "description": "Everyday solitaire studs in warm gold with a secure push-back fit. Subtle, brilliant and made to be worn without ever taking off.",
+    "images": [
+      "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 7400,
+    "mrp": 9500,
+    "badge": null,
+    "rating": 4.6,
+    "reviews": 121,
+    "details": {
+      "Metal": "14K Gold Plated",
+      "Purity": "Zircon centre",
+      "Weight": "4.2 g pair",
+      "Stones": "CZ 0.30 ctw"
+    },
+    "featured": false,
+    "isNew": false,
+    "stock": 32
+  },
+  {
+    "name": "Aarav Solitaire Engagement Ring",
+    "category": "RINGS",
+    "description": "A 0.75 carat lab-grown diamond solitaire in a four-prong platinum setting. The ultimate proposal piece, delivered with GIA-grade certification and velvet case.",
+    "images": [
+      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 124000,
+    "mrp": 142000,
+    "badge": "Exclusive",
+    "rating": 5,
+    "reviews": 28,
+    "details": {
+      "Metal": "Platinum 950",
+      "Purity": "Lab-grown diamond",
+      "Weight": "0.75 ctw",
+      "Stones": "Round brilliant",
+      "Certification": "IGI Certified",
+      "Sizes": "US 5 – 9"
+    },
+    "featured": true,
+    "isNew": false,
+    "stock": 2
+  },
+  {
+    "name": "Zoya Rose Gold Ring",
+    "category": "RINGS",
+    "description": "A blush rose-gold band set with a warm morganite centre and halo of tiny diamonds. Romantic, modern and irresistibly soft on the finger.",
+    "images": [
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 16800,
+    "mrp": 21000,
+    "badge": "New",
+    "rating": 4.8,
+    "reviews": 54,
+    "details": {
+      "Metal": "18K Rose Gold",
+      "Purity": "BIS Hallmarked",
+      "Weight": "4.9 g",
+      "Stones": "Morganite 0.9 ctw, Diamond halo",
+      "Sizes": "US 5 – 8"
+    },
+    "featured": false,
+    "isNew": true,
+    "stock": 8
+  },
+  {
+    "name": "Anika Gold Bangle Set",
+    "category": "BANGLES",
+    "description": "A set of three handcrafted gold bangles — one plain polish, one pearl-encrusted and one with intricate kundan studs. Sized to be worn together for the perfect festive stack.",
+    "images": [
+      "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1620656798579-1984d9e87df7?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 42300,
+    "mrp": 56000,
+    "badge": "Bestseller",
+    "rating": 4.9,
+    "reviews": 156,
+    "details": {
+      "Metal": "22K Gold Plated",
+      "Purity": "BIS 916 base",
+      "Weight": "96 g set",
+      "Size": "2.4\" inner diameter",
+      "Set": "3 pieces"
+    },
+    "featured": true,
+    "isNew": false,
+    "stock": 5
+  },
+  {
+    "name": "Isha Filigree Bangle",
+    "category": "BANGLES",
+    "description": "Fine silver filigree interwoven with gold thread in a timeless lattice pattern. Light, flexible and effortlessly elegant.",
+    "images": [
+      "https://images.unsplash.com/photo-1560298803-1d998f6b5249?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1611085583191-a3b181a88401?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 11500,
+    "mrp": 14800,
+    "badge": null,
+    "rating": 4.7,
+    "reviews": 88,
+    "details": {
+      "Metal": "Sterling Silver + Gold",
+      "Purity": "925 Silver",
+      "Weight": "22 g",
+      "Size": "2.3\" inner diameter"
+    },
+    "featured": false,
+    "isNew": false,
+    "stock": 15
+  },
+  {
+    "name": "Saanvi Antique Kada",
+    "category": "BANGLES",
+    "description": "A bold antique-finished kada etched with traditional motifs. Heirloom-weight design with a modern comfort fit.",
+    "images": [
+      "https://images.unsplash.com/photo-1611085583191-a3b181a88401?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1560298803-1d998f6b5249?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 27900,
+    "mrp": 35000,
+    "badge": null,
+    "rating": 4.8,
+    "reviews": 47,
+    "details": {
+      "Metal": "22K Gold Plated",
+      "Purity": "Antique finish",
+      "Weight": "58 g",
+      "Size": "2.4\" inner diameter"
+    },
+    "featured": false,
+    "isNew": false,
+    "stock": 4
+  },
+  {
+    "name": "Veer Diamond Mangalsutra",
+    "category": "MANGALSUTRA",
+    "description": "A modern classic — black beads flanking a diamond-studded pendant with a subtle \"V\" motif. The two-tone finish pairs beautifully with both gold and platinum.",
+    "images": [
+      "https://images.unsplash.com/photo-1610614819513-58e34989848b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 58500,
+    "mrp": 72000,
+    "badge": "Bestseller",
+    "rating": 5,
+    "reviews": 132,
+    "details": {
+      "Metal": "18K Yellow Gold",
+      "Purity": "BIS Hallmarked",
+      "Weight": "11.4 g",
+      "Stones": "Diamond 0.35 ctw",
+      "Length": "18\" adjustable"
+    },
+    "featured": true,
+    "isNew": false,
+    "stock": 7
+  },
+  {
+    "name": "Lakshmi Coin Mangalsutra",
+    "category": "MANGALSUTRA",
+    "description": "Traditional Lakshmi coin pendant strung with black beads and gold balls. A spiritual keepsake passed lovingly across generations.",
+    "images": [
+      "https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1610614819513-58e34989848b?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 34700,
+    "mrp": 43000,
+    "badge": null,
+    "rating": 4.8,
+    "reviews": 73,
+    "details": {
+      "Metal": "22K Gold Plated",
+      "Purity": "BIS 916 base",
+      "Weight": "26.5 g",
+      "Pendant": "Lakshmi Coin 5g",
+      "Length": "18\" + 2\" extender"
+    },
+    "featured": false,
+    "isNew": false,
+    "stock": 11
+  },
+  {
+    "name": "Devine Silver Anklet",
+    "category": "ANKLETS",
+    "description": "Sterling silver anklet with delicate drops that whisper as you walk. Adjustable clasp for a perfect fit around any ankle.",
+    "images": [
+      "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 6200,
+    "mrp": 8200,
+    "badge": "New",
+    "rating": 4.6,
+    "reviews": 39,
+    "details": {
+      "Metal": "Sterling Silver",
+      "Purity": "925 Silver",
+      "Weight": "9 g",
+      "Length": "9\" adjustable"
+    },
+    "featured": false,
+    "isNew": true,
+    "stock": 26
+  },
+  {
+    "name": "Ratna Beaded Anklet",
+    "category": "ANKLETS",
+    "description": "Mixed gemstone beads in warm earth tones strung on durable gold-tone wire. Boho charm with a touch of luxury.",
+    "images": [
+      "https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 4800,
+    "mrp": 6400,
+    "badge": null,
+    "rating": 4.5,
+    "reviews": 61,
+    "details": {
+      "Metal": "Gold-Tone Plated",
+      "Purity": "Gemstone beads",
+      "Weight": "8 g",
+      "Length": "9.5\" adjustable"
+    },
+    "featured": false,
+    "isNew": false,
+    "stock": 30
+  },
+  {
+    "name": "Prisha Tennis Bracelet",
+    "category": "BRACELETS",
+    "description": "A continuous line of brilliant diamonds in a secure four-prong setting. The definitive statement of understated luxury.",
+    "images": [
+      "https://images.unsplash.com/photo-1620656798579-1984d9e87df7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 64000,
+    "mrp": 79000,
+    "badge": "Exclusive",
+    "rating": 4.9,
+    "reviews": 35,
+    "details": {
+      "Metal": "18K White Gold",
+      "Purity": "BIS Hallmarked",
+      "Weight": "13.2 g",
+      "Stones": "Diamond 2.1 ctw",
+      "Length": "7\" adjustable"
+    },
+    "featured": true,
+    "isNew": false,
+    "stock": 2
+  },
+  {
+    "name": "Amrita Chain Bracelet",
+    "category": "BRACELETS",
+    "description": "A sculpted gold chain bracelet with a single pearl accent. Minimal, modern and made to be layered.",
+    "images": [
+      "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1620656798579-1984d9e87df7?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 12900,
+    "mrp": 16500,
+    "badge": "New",
+    "rating": 4.7,
+    "reviews": 52,
+    "details": {
+      "Metal": "18K Gold Plated",
+      "Purity": "High polish",
+      "Weight": "16 g",
+      "Length": "7.5\""
+    },
+    "featured": false,
+    "isNew": true,
+    "stock": 12
+  },
+  {
+    "name": "Tanuja Kundan Maang Tikka",
+    "category": "KUNDAN_SETS",
+    "description": "A statement maang tikka with emerald-green kundan and pearl strands. The finishing touch to a bridal look that turns heads.",
+    "images": [
+      "https://images.unsplash.com/photo-1603974372039-adc49044b6bd?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 8900,
+    "mrp": 11800,
+    "badge": "New",
+    "rating": 4.8,
+    "reviews": 44,
+    "details": {
+      "Metal": "22K Gold Plated",
+      "Purity": "Kundan work",
+      "Weight": "14 g",
+      "Stones": "Kundan, Emerald, Pearl"
+    },
+    "featured": false,
+    "isNew": true,
+    "stock": 10
+  },
+  {
+    "name": "Noor Golden Nath",
+    "category": "KUNDAN_SETS",
+    "description": "A graceful gold nath (nose ring) with tiny pearl and bead drops. Designed for both bridal and festive wear.",
+    "images": [
+      "https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1611085583191-a3b181a88401?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 5600,
+    "mrp": 7400,
+    "badge": null,
+    "rating": 4.7,
+    "reviews": 58,
+    "details": {
+      "Metal": "22K Gold Plated",
+      "Purity": "Pearl drops",
+      "Weight": "6.5 g",
+      "Size": "Adjustable coil"
+    },
+    "featured": false,
+    "isNew": false,
+    "stock": 18
+  },
+  {
+    "name": "Riva Emerald Ring",
+    "category": "RINGS",
+    "description": "A vivid emerald in a warm gold bezel, flanked by tapered baguettes. A ring that feels like an heirloom from the very first wear.",
+    "images": [
+      "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 22500,
+    "mrp": 28900,
+    "badge": null,
+    "rating": 4.8,
+    "reviews": 67,
+    "details": {
+      "Metal": "18K Yellow Gold",
+      "Purity": "BIS Hallmarked",
+      "Weight": "5.6 g",
+      "Stones": "Emerald 1.2 ctw, Baguette CZ",
+      "Sizes": "US 5 – 8"
+    },
+    "featured": false,
+    "isNew": false,
+    "stock": 6
+  },
+  {
+    "name": "Saira Antique Pendant",
+    "category": "NECKLACES",
+    "description": "Antique-finished pendant with ornate detailing and a delicate chain. Understated enough for the day, bold enough for the evening.",
+    "images": [
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 14900,
+    "mrp": 19200,
+    "badge": null,
+    "rating": 4.6,
+    "reviews": 49,
+    "details": {
+      "Metal": "22K Gold Plated",
+      "Purity": "Antique finish",
+      "Weight": "19 g",
+      "Length": "18\" chain"
+    },
+    "featured": false,
+    "isNew": false,
+    "stock": 9
+  },
+  {
+    "name": "Myra Stacking Ring Set",
+    "category": "RINGS",
+    "description": "Five stackable rings — one diamond-etched, one textured, one beaded, one twisted and one plain polish. Mix, match and make it yours.",
+    "images": [
+      "https://images.unsplash.com/photo-1512163143273-bde0e3cc7407?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 9900,
+    "mrp": 12800,
+    "badge": "New",
+    "rating": 4.7,
+    "reviews": 93,
+    "details": {
+      "Metal": "18K Gold Plated",
+      "Purity": "Mixed finishes",
+      "Weight": "11 g set",
+      "Set": "5 rings",
+      "Sizes": "US 5 – 8"
+    },
+    "featured": false,
+    "isNew": true,
+    "stock": 22
+  },
+  {
+    "name": "Esha Temple Necklace",
+    "category": "NECKLACES",
+    "description": "South-Indian temple jewellery reinterpreted — goddess motifs in gold with ruby-red enamel accents. Grand, regal and unforgettable.",
+    "images": [
+      "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 37900,
+    "mrp": 46500,
+    "badge": "Bestseller",
+    "rating": 4.9,
+    "reviews": 104,
+    "details": {
+      "Metal": "22K Gold Plated",
+      "Purity": "Enamel detailing",
+      "Weight": "71 g",
+      "Stones": "Zircon, Enamel",
+      "Length": "17\" + pendant drop"
+    },
+    "featured": true,
+    "isNew": false,
+    "stock": 4
+  },
+  {
+    "name": "Jeevika Gold Coin Bangle",
+    "category": "BANGLES",
+    "description": "A single gold bangle with embossed coin detailing and a polished edge. The everyday bangle that goes with everything.",
+    "images": [
+      "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "price": 18600,
+    "mrp": 23500,
+    "badge": null,
+    "rating": 4.7,
+    "reviews": 71,
+    "details": {
+      "Metal": "22K Gold Plated",
+      "Purity": "BIS 916 base",
+      "Weight": "39 g",
+      "Size": "2.4\" inner diameter"
+    },
+    "featured": false,
+    "isNew": false,
+    "stock": 13
+  }
+]
