@@ -1,5 +1,5 @@
 import { NextRequest } from "next/server";
-import { OrderStatus } from "@prisma/client";
+import { OrderStatus, Prisma } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
 import { getAdminFromRequest } from "@/lib/auth";
 import { getCustomerFromRequest } from "@/lib/customer-auth";
@@ -182,7 +182,7 @@ export async function GET(request: NextRequest) {
   const status = searchParams.get("status");
   const search = searchParams.get("search");
 
-  const where: { orderStatus?: OrderStatus; OR?: unknown[] } = {};
+ const where: Prisma.OrderWhereInput = {};
   const VALID_STATUSES: OrderStatus[] = ["PLACED", "CONFIRMED", "ASSIGNED", "OUT_FOR_DELIVERY", "DELIVERED", "CANCELLED"];
   if (status && VALID_STATUSES.includes(status as OrderStatus)) where.orderStatus = status as OrderStatus;
   if (search) {

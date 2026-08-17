@@ -44,12 +44,13 @@ export async function geocodeAddress(
       },
     });
     if (!res.ok) return null;
-
+    
     const results = (await res.json()) as Array<{ lat: string; lon: string }>;
-    if (!results.length) return null;
+    const first = results[0];
+    if (!first) return null;
 
-    const lat = Number(results[0].lat);
-    const lng = Number(results[0].lon);
+    const lat = Number(first.lat);
+    const lng = Number(first.lon);
     if (!Number.isFinite(lat) || !Number.isFinite(lng)) return null;
 
     return { lat, lng };
